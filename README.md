@@ -1,4 +1,4 @@
-# Name: Testing with RestAssured and JUnit
+# Name: Automated testing with RestAssured and JUnit
 
 # Description:
 
@@ -13,5 +13,5 @@
 # Finally, try generating a new Suite at the run/debug configurations editor and adding a new configuration for JUnit with the tag "Regression". Then run it.
 
 # Observations:
-# In case the test for the register method fails please check if the user was already created.
+# In case the test for the register method fails please check if the user was already created. To resolve this consider changing for a new username.
 # For instance, if you run all the tests and the register for the TestFront.class fails it may be due to the user was already created at the TestBack.class.
