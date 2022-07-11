@@ -51,9 +51,9 @@ public class TestBack {
 
 
     @Test
+    @Order(1)
     @Tag("Smoke")
     @DisplayName("Proceso de registro")
-    @Order(1)
     public void testRegisterNewUser(){
 
         // En este endpoint (GET) se visita la página de registro para obtener la cookie de sesión
@@ -125,9 +125,9 @@ public class TestBack {
     }
 
     @Test
+    @Order(3)
     @Tag("Regression")
     @DisplayName("Apertura de una nueva cuenta")
-    @Order(3)
     public void testOpenAccount(){
 
         // De este endpoint (GET) podemos obtener el listado de cuentas que sería el equivalente de la página de overview.htm
@@ -166,7 +166,7 @@ public class TestBack {
     }
 
     @Test
-    @Order(3)
+    @Order(4)
     @Tag("Regression")
     @DisplayName("Resumen de las cuentas")
     public void testAccountSummary() {
@@ -181,9 +181,9 @@ public class TestBack {
     }
 
     @Test
+    @Order(5)
     @Tag("Regression")
     @DisplayName("Transferencia de fondos")
-    @Order(4)
     public void testTransfer(){
 
         // En este endpoint (POST) podemos hacer transferencia de dinero entre las dos cuentas obtenidas anteriormente
@@ -200,9 +200,9 @@ public class TestBack {
 
 
     @Test
+    @Order(6)
     @Tag("Regression")
     @DisplayName("Actividad de la cuenta")
-    @Order(5)
     public void testActivity(){
 
         given()

@@ -40,8 +40,8 @@ public class TestFront {
         basePage.openApp();
     }
 
-    @Order(1)
     @Test
+    @Order(1)
     @Tag("Smoke")
     @DisplayName("Proceso de registro")
     public void testRegistry() {
@@ -59,11 +59,11 @@ public class TestFront {
 
     }
 
-    @Order(2)
     @Test
+    @Order(2)
     @Tag("Regression")
-    @DisplayName("Test de loggin")
-    public void testLoggin(){
+    @DisplayName("Test de login")
+    public void testLogin(){
         Login login = new Login();
         login.login(user, password);
         String result = login.confirmLogin();
@@ -71,8 +71,8 @@ public class TestFront {
         System.out.println("Test pass: " + confirm );
     }
 
-    @Order(3)
     @Test
+    @Order(3)
     @Tag("Regression")
     @DisplayName("Apertura de una nueva cuenta")
     public void testNewAccount() {
